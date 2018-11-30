@@ -1,1 +1,10 @@
-echo hello, world!
+sudo su
+apt-get update
+apt-get install apache2 mysql-server
+mysql_secure_installation
+mysql
+apt-get install php7.0 php-pear php7.0-mysql
+apt-get install phpmyadmin
+cd /var/www/html
+ln -s /usr/share/phpmyadmin
+exit
