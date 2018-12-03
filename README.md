@@ -27,7 +27,7 @@ After the installation script is finished running, type the IP address of your s
 
 ![Alt text](/screenshots/wordpress_configure_one.png?raw=true "Hit Let's Go!.")
 
-Press the "Let's Go!" button. The next page will prompt you for some site information. In the "username" field, replace the default test with "webmaster", then press submit. 
+Press the "Let's Go!" button. The next page will prompt you for some site information. In the "username" field, replace the default text with "webmaster", then press submit. 
 
 ![Alt text](/screenshots/wordpress_configure_two.png?raw=true "Enter information and press submit.")
 
