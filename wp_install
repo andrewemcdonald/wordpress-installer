@@ -1,11 +1,15 @@
 apt-get update
-apt-get install apache2 mysql-server
+apt-get install apache2 mysql-server zip unzip
 sudo mysql -u root -Bse "CREATE USER 'webmaster'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'webmaster'@'localhost'"
+sudo mysql -u root -Bse "CREATE DATABASE wordpress"
 apt-get install php7.0 php-pear php7.0-mysql
 apt-get install phpmyadmin
 cd /var/www/html
+sudo rm index.html
 ln -s /usr/share/phpmyadmin
 wget https://wordpress.org/latest.zip
 unzip latest.zip
+sudo mv wordpress/* ./
+sudo rm -r wordpress
 cd ..
 chmod -R 777 html
